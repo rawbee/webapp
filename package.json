@@ -1,0 +1,31 @@
+{
+  "name": "upstatehq.com",
+  "author": "Simple Labs, Inc.",
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "The upstatehq server and web app.",
+  "repository": "https://github.com/simplelabsinc/upstatehq.com.git",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack --watch --config webpack.config.js",
+    "build-server": "babel source --out-dir deploy --watch --presets=env,react",
+    "start-dev-server": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "file": "^0.2.2",
+    "markdown-it": "^8.4.0",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
